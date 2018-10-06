@@ -23,5 +23,5 @@
 
 FROM fedora:28
 ADD entrypoint /bin/entrypoint
-RUN dnf install -y buildbot-worker
+RUN dnf install -y sudo buildbot-worker
 CMD ["/bin/entrypoint"]
