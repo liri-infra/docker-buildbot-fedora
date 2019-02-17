@@ -21,7 +21,7 @@
 # $END_LICENSE$
 #
 
-FROM fedora:28
+FROM fedora:29
 ADD entrypoint /bin/entrypoint
 RUN dnf install -y sudo buildbot-worker
 CMD ["/bin/entrypoint"]
